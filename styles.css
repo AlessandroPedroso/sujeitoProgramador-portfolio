@@ -54,11 +54,11 @@ html{
     background-image: url("images/programador.png");
     background-repeat: no-repeat;
     background-position: center;
-  
+
     display: flex;
     align-items: center;
     padding-left: 10%;
-}   
+}
 .main h1{
     color: #FFFFFF;
     font-size: 54px;
@@ -210,3 +210,75 @@ footer p {
 }
 
 /* FIM RODAPÉ */
+
+
+/*RESPONSIVIDADE*/
+
+@media (max-width:1050px){
+    /*INICIO MAIN*/
+    .main h1{
+        font-size: 45px;
+    }
+
+
+    .main p{
+        font-size: 18px;
+    }
+
+    .main{
+        background-size: cover;
+    }
+    /*FIM MAIN*/
+
+
+    /*iNICIO SOBRE*/
+
+    .about{
+        flex-direction: column;
+        padding-top: 80px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .about div {
+        max-width: 80%;
+    }
+
+    .about div h2 {
+        font-size: 45px;
+    }
+
+    .about img{
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    /*FINAL SOBRE*/
+
+
+    /*INICIO PROJETO*/
+    .project-list img{
+        width: 27.5%;
+     }
+
+     /*FIM PROJETO*/
+
+     /*INICIO RODAPÉ*/
+
+     footer{
+        flex-direction: column;
+     }
+
+     footer h3{
+        font-size: 24px;
+        margin-bottom: 8px;
+     }
+
+     footer p{
+        margin: 0;
+     }
+
+     /*FIM RODAPE*/
+
+}
